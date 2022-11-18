@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/Users/GHAZALI/Desktop/space-tourism-website-main/starter-code/assets/crew/background-crew-desktop.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    margin:60px;
+}
+#opennav {
+    display: none;
+}
+.underline {
+    border-bottom: 2px solid grey;
+}
+.nav2 {
+    background-color: rgba(166, 164, 164, 0.1);
+    cursor: pointer;
+}
+.nav1 {
+    display: none;
+}.list1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.list1 li{
+    list-style: none;
+    margin: 20px;
+}
+.list1 a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+header div ul li a span {
+    font-size: 20px;
+    color: white;
+    padding-right: 10px;
+}
+.content h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-left: 120px;
+}
+.content h1 span {
+    color: grey;
+    padding-right: 20px;
+}
+.context {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.context .commander {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 120px;
+    width: 50%;
+}
+.commander h3 {
+    font-size: 32px;
+    color: grey;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Bellefair';
+}
+.commander h2 {
+    font-size: 54px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Bellefair';
+}
+.commander p {
+    width: 50%;
+    color: #D0D6F9;
+    line-height: 32px;
+}
+.dot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+.dot2 {
+    display: none;
+}
+
+#dot1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #979797;
+    margin:0px 30px 0px 0px;
+}
+#dot2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #979797;
+    margin:0px 30px;
+}
+#dot3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin:0px 30px;
+}
+#dot4 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #979797;
+    margin:0px 30px;
+}
+.image img {
+    margin-right: 150px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        background-image: url('/Users/GHAZALI/Desktop/space-tourism-website-main/starter-code/assets/crew/background-crew-tablet.jpg');
+    }
+    img {
+        margin:40px;
+    }
+    header div ul li a span {
+        font-size: 20px;
+        display: none;
+    }
+    .list1 li{
+        margin: 10px;
+    }
+    .list1 a {
+        padding: 10px;
+    }
+    .content h1 {
+        padding-left: 40px;
+    }
+    .context {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .context .commander {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .commander p {
+        width: 70%;
+        text-align: center;
+    }
+    .image img {
+        margin-bottom: 180px;
+        margin-top: 60px;
+        margin-right: 0px;
+    }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+    body{
+        background-image: url('/Users/GHAZALI/Desktop/space-tourism-website-main/starter-code/assets/crew/background-crew-mobile.jpg');
+    }
+    img {
+        margin:30px;
+    }
+    #opennav {
+        display: block;
+        cursor: pointer;
+    }
+    .nav2 {
+        display: none;
+    }
+    .nav1 {
+        display: block;
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.04);
+        right: 0;
+        top: 0;
+        backdrop-filter: blur(40.7742px);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 1sec;
+    }
+    .nav1 .times {
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 40px;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start; 
+        transition: 0.5sec;
+    }
+    .dropdown a {
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500px;
+        font-size: 20px;
+    }
+    .dropdown a:hover {
+        color: #1f1f1f;
+    }
+    .dropdown a span {
+        color: w;
+        padding-right: 10px;
+        font-size: 25px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center; 
+    }
+    .content h1 {
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    .context {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .context .commander {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    .commander h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+    .commander h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+    .commander p {
+        width: 81%;
+        text-align: center;
+    }
+    .dot {
+        display: none;
+    }
+    .dot2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .image {
+        border-bottom: 1px solid #D0D6F9;
+        margin-bottom: 30px;
+    }
+    .image img {
+        width:170px;
+        height: 220px;
+        margin: 0;
+        padding: 0;
+        margin-right: 0px;
+    }
+    #dot1 {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #979797;
+        margin:0px 15px 0px 0px;
+    }
+    #dot2 {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #979797;
+        margin:0px 15px;
+    }
+    #dot3 {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        margin:0px 15px;
+    }
+    #dot4 {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #979797;
+        margin:0px 15px;
+    }
+}
